@@ -143,6 +143,16 @@ body {
   letter-spacing: -0.025em;
   line-height: 1.75em;
 }
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+p {
+  margin: 20px 0;
+  line-height: 1.25;
+}
 #background {
   background-image: url(../imgs/plane-horizon.jpg);
   background-color: darkslategray;
@@ -204,4 +214,24 @@ nav a {
   text-decoration: none;
   text-align: center;
   width: max-content;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin-bottom: 40px;
+  align-content: center;
+  text-align: center;
+}
+header h1 {
+  color: black;
+}
+.features .card-links {
+  display: flex;
+  justify-content: space-between;
+}
+.features .card-links .link {
+  padding: 20px 40px;
+  cursor: pointer;
 }
