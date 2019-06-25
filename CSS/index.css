@@ -228,6 +228,7 @@ header h1 {
   color: black;
 }
 .features .card-links {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
