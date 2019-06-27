@@ -1,0 +1,74 @@
+
+#background{
+background-image: @bg;
+background-color: darkslategray;
+background-repeat: no-repeat;
+position: fixed;
+background-size: 100%;
+height: 100%;
+width: 100%;
+}
+main{
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 100%;
+position: fixed;
+}
+header{
+cursor: default;
+display: inline-block;
+text-align: center;  
+width: 90%;
+position: relative;
+vertical-align: middle;
+h1{
+font-size: 4.1em;
+line-height: 2em;
+font-weight: 900;
+color: @spring;
+}
+p{
+font-size: 1.25em;
+margin: 0.5em 0 0.5em 0;
+color: @home-p-color;
+}
+}
+nav{
+margin: 2em 0 0 0;
+
+ul{
+display: flex;
+justify-content: space-evenly;
+list-style-type: none;
+position: relative;
+}
+li {
+display: inline-block;
+height: 5.35em;
+width: 5.35em;
+}
+
+a{
+display: inline-block;
+font-size: 1.35em;
+height: 2.5em;
+line-height: 2.53em;
+border: 1px solid black;
+border-radius: 50px;
+color: @spring;
+background-color: @white;
+text-decoration: none;
+text-align: center;
+width: max-content;
+
+}
+
+}
+
+// nav a:hover{
+
+//     background: @spring;
+//     color:@white;
+
+// }
