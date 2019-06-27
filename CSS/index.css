@@ -163,6 +163,13 @@ p {
   height: 100%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  #background {
+    background-size: 100%;
+    height: 100%;
+    background-image: none;
+  }
+}
 main {
   display: flex;
   flex-direction: column;
@@ -231,6 +238,16 @@ nav a {
   font-size: 2.5em;
   color: black;
 }
+@media (max-width: 500px) {
+  .header {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px0;
+  }
+  .header h1 {
+    margin-bottom: 10px;
+  }
+}
 .header .menu {
   position: relative;
   display: inline-block;
@@ -265,11 +282,11 @@ nav a {
   text-decoration: none;
   display: block;
 }
-.header .menu .menu-content a:last-child {
-  border-bottom: none;
-}
 .header .menu .menu-content a:hover {
   background-color: aqua;
+}
+.header .menu .menu-content a:last-child {
+  border-bottom: none;
 }
 .header .menu .show {
   display: block;
@@ -293,7 +310,7 @@ nav a {
 .card {
   margin: 5%;
   padding: 0 20px 20px;
-  border: 1px solid lightblue;
+  border: 3px solid lightblue;
   border-radius: 20px;
   position: relative;
   height: 70px;
