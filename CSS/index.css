@@ -241,8 +241,10 @@ nav a {
 @media (max-width: 500px) {
   .header {
     display: inline-block;
+    background-color: aliceblue;
     width: 100%;
     padding-top: 10px0;
+    margin-bottom: 0;
   }
   .header h1 {
     margin-bottom: 10px;
@@ -252,6 +254,12 @@ nav a {
   position: relative;
   display: inline-block;
   font-size: 0.75em;
+}
+@media (max-width: 500px) {
+  .header .menu {
+    width: 100%;
+    margin-top: 40px;
+  }
 }
 .header .menu .menu-btn {
   display: block;
@@ -266,6 +274,11 @@ nav a {
 .header .menu .menu-btn:focus {
   background-color: #3e8e41;
 }
+@media (max-width: 500px) {
+  .header .menu .menu-btn {
+    display: none;
+  }
+}
 .header .menu .menu-content {
   display: none;
   position: absolute;
@@ -274,6 +287,16 @@ nav a {
   overflow: auto;
   z-index: 1;
   border: 1px solid lightgray;
+}
+@media (max-width: 500px) {
+  .header .menu .menu-content {
+    display: flex;
+    min-width: auto;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+    z-index: none;
+  }
 }
 .header .menu .menu-content a {
   color: black;
@@ -293,11 +316,11 @@ nav a {
 }
 .features {
   display: flex;
-  padding: 25px 300px;
+  padding: 25px;
   margin-bottom: 100px;
 }
 .features h2 {
-  font-size: 1em;
+  font-size: 2.75rem;
   text-align: center;
 }
 .features img {
@@ -307,8 +330,16 @@ nav a {
 .features p {
   font-size: 0.5em;
 }
+@media (max-width: 500px) {
+  .features {
+    display: inline;
+    padding: 40px;
+    width: 100%;
+    padding: 25px;
+  }
+}
 .card {
-  margin: 5%;
+  margin: 25px;
   padding: 0 20px 20px;
   border: 3px solid lightblue;
   border-radius: 20px;
@@ -316,6 +347,17 @@ nav a {
   height: 70px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightcoral;
+}
+@media (max-width: 500px) {
+  .card {
+    margin: 0px;
+    margin-bottom: 10px;
+    box-shadow: none;
+    border: 3px dashed lightslategray;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px 1px springgreen;
+    height: 100%;
+  }
 }
 .card .expandBtn {
   position: absolute;
@@ -325,6 +367,11 @@ nav a {
   color: gray;
   cursor: pointer;
   transform: translate(-50%);
+}
+@media (max-width: 500px) {
+  .card .expandBtn {
+    display: none;
+  }
 }
 .card .close {
   position: absolute;
@@ -337,4 +384,10 @@ nav a {
 footer {
   display: flex;
   justify-content: center;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  footer {
+    background-color: aliceblue;
+  }
 }
