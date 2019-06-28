@@ -1,0 +1,403 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Righteous', cursive;
+}
+body {
+  font-family: 'Righteous', cursive;
+  font-size: 3.75rem;
+  font-weight: 300 !important;
+  letter-spacing: -0.025em;
+  line-height: 1.75em;
+  height: 100%;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+p {
+  margin: 20px 0;
+  line-height: 1.25;
+}
+#background {
+  background-image: url(../imgs/plane-horizon.jpg);
+  background-color: darkslategray;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+header {
+  cursor: default;
+  display: inline-block;
+  text-align: center;
+  width: 90%;
+  position: relative;
+  vertical-align: middle;
+}
+header h1 {
+  font-size: 4.1em;
+  line-height: 2em;
+  font-weight: 900;
+  color: springgreen;
+}
+header p {
+  font-size: 1.25em;
+  margin: 0.5em 0 0.5em 0;
+  color: #FFFFFF;
+}
+nav {
+  margin: 2em 0 0 0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  position: relative;
+}
+nav li {
+  display: inline-block;
+  height: 5.35em;
+  width: 5.35em;
+}
+nav a {
+  display: inline-block;
+  font-size: 1.35em;
+  height: 2.5em;
+  line-height: 2.53em;
+  border: 1px solid black;
+  border-radius: 50px;
+  color: springgreen;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  width: max-content;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: beige;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  align-content: center;
+  text-align: center;
+}
+.header h1 {
+  font-size: 2.5em;
+  color: black;
+}
+.header .menu {
+  position: relative;
+  display: inline-block;
+  font-size: 0.75em;
+}
+.header .menu .menu-btn {
+  display: block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 0.75em;
+  border: none;
+  cursor: pointer;
+}
+.header .menu .menu-btn:hover,
+.header .menu .menu-btn:focus {
+  background-color: #3e8e41;
+}
+.header .menu .menu-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 230px;
+  overflow: auto;
+  z-index: 1;
+  border: 1px solid lightgray;
+}
+.header .menu .menu-content a {
+  color: black;
+  padding: 12px 16px;
+  border-bottom: 1px dashed gray;
+  text-decoration: none;
+  display: block;
+}
+.header .menu .menu-content a:last-child {
+  border-bottom: none;
+}
+.header .menu .menu-content a:hover {
+  background-color: aqua;
+}
+.header .menu .show {
+  display: block;
+}
+.features {
+  display: flex;
+  padding: 25px 300px;
+  margin-bottom: 100px;
+}
+.features h2 {
+  font-size: 1em;
+  text-align: center;
+}
+.features img {
+  margin-top: 10px;
+  width: 100%;
+}
+.features p {
+  font-size: 0.5em;
+}
+.card {
+  margin: 5%;
+  padding: 0 20px 20px;
+  border: 1px solid lightblue;
+  border-radius: 20px;
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px lightcoral;
+}
+.card .expandBtn {
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  font-size: 12px;
+  color: gray;
+  cursor: pointer;
+  transform: translate(-50%);
+}
+.card .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.card-open {
+  height: 100%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  /* border: 6px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 150px;
+  margin: 50px;
+  padding: 50px;
+}
+a {
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media screen and (max-width: 500px) {
+  a {
+    float: none;
+    width: 100%;
+    /* display: block; */
+  }
+}
+h1 {
+  /* border: 6px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 50px;
+}
+.plane {
+  /* border: 6px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+  margin-left: 400px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .plane {
+    /* display: none; */
+    width: 50%;
+    height: auto;
+    margin-left: 0;
+    margin: 0;
+  }
+}
+p {
+  /* border: 6px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px;
+}
+/* Contact */
+.touch {
+  /* border: 6px solid black; */
+  font-size: 1rem;
+  border-bottom: 2px solid #0d253d;
+  width: 250px;
+}
+.email {
+  /* border: 6px solid orange; */
+}
+@media screen and (max-width: 500px) {
+  .email {
+    margin-left: 30px;
+    color: #0d253d;
+  }
+}
+.contact-p {
+  /* border: 6px solid black; */
+  padding: 30px;
+}
+.email-h1 {
+  border: 6px solid black;
+  margin-left: 10px;
+  font-size: 1rem;
+}
