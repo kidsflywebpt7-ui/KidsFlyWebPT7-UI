@@ -159,6 +159,7 @@ p {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  padding-bottom: 116px;
   background-color: #0d253d;
 }
 header {
@@ -215,10 +216,11 @@ header p {
   }
 }
 .navigation li {
-  display: block;
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
   height: 5.35em;
-  width: 5.35em;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .navigation li {
@@ -239,6 +241,11 @@ header p {
   text-decoration: none;
   text-align: center;
   width: max-content;
+}
+.navigation a:hover {
+  background-color: #2d2d3d;
+  color: #eeeeaa;
+  transition-delay: 0.5s;
 }
 @media (max-width: 500px) {
   .navigation a {
