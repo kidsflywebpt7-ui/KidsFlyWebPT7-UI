@@ -1,4 +1,4 @@
-
+// Main Styling
 .main{
 display: flex;
 flex-direction: column;
@@ -6,9 +6,8 @@ height: 100%;
 width: 100%;
 padding-bottom: 116px;
 background-color: @ng;
-
 }
-
+// Header Style
 header{
 cursor: default;
 display: flex;
@@ -16,14 +15,12 @@ flex-direction: column;
 justify-content: center;
 width: 100%;
 text-align: center;
-
 h1{
 display: flex;
 text-align: center;
 justify-content: center;
 font-size: 3.75em;
 line-height: 2em;
-
 color: @pale-green;
 }
 p{
@@ -31,7 +28,6 @@ font-size: 1.25em;
 margin: 0.5em 0 0.5em 0;
 color: @yg;
 @media @phone {
-
 margin:0;
 &:hover{
 font-size: 1.5em;
@@ -39,11 +35,10 @@ transition: 2s;
 }
 }
 }
-
 }
+// Navigation Styling
 .navigation{
 margin: 50px 0 0 0 ;
-
 @media @phone{
 display: flex;
 justify-content: center;
@@ -55,32 +50,23 @@ ul{
 display: flex;
 justify-content: space-evenly;
 list-style-type: none;
-
 width: 100%;
-
 @media @phone{
 display: flex;
 flex-direction: column;
-
 }
 }
-li {
-   display: flex;
-   justify-content: center;
-   /* flex-wrap: wrap; */
-   height: 5.35em;
-   width: 100%;
-   
-  
-
+li{
+display: flex;
+justify-content: center;
+height: 5.35em;
+width: 100%;
 @media @phone {
 height: 100%;
 width: 100%;
 margin-bottom: 20px;
-
 }
 }
-
 a{
 display: inline-block;
 font-size: 1.35em;
@@ -93,18 +79,13 @@ background-color: @white;
 text-decoration: none;
 text-align: center;
 width: max-content;
-
- &:hover{
-      background-color: @dg;
-      color: @yg;
-      transition-delay: .5s;
-   }
-
+&:hover{
+background-color: @dg;
+color: @yg;
+transition-delay: .5s;
+}
 @media @phone{
-
 width: 100%;
-
 }
 }
-
 }
