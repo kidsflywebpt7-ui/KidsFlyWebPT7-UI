@@ -1,3 +1,8 @@
+//Container Styling
+.container{
+  background-color: seashell;
+}
+
 // Header Styling
 .header{
 width: 100%;
@@ -133,6 +138,7 @@ box-shadow: 2px 2px 2px lightcoral;
  border-radius: 10px;
  box-shadow: 1px 2px 1px 1px @spring;
  height: 100%;
+ background-color: @home-p-color;
  }
 
 .expandBtn{
@@ -156,6 +162,16 @@ right: 10px;
 }
 .card-open{
 height: 100%;
+background-color: dimgray;
+.expandBtn{
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  font-size: 12px;
+  color: @home-p-color;
+  cursor: pointer;
+  transform: translate(-50%);
+}
 }
 
 // Footer Style

@@ -4,7 +4,7 @@ display: flex;
 flex-direction: column;
 height: 100%;
 width: 100%;
-background-color: black;
+background-color: @ng;
 
 }
 
@@ -23,49 +23,77 @@ justify-content: center;
 font-size: 3.75em;
 line-height: 2em;
 
-color: @spring;
+color: @pale-green;
 }
 p{
 font-size: 1.25em;
 margin: 0.5em 0 0.5em 0;
-color: @home-p-color;
+color: @yg;
+@media @phone {
+
+margin:0;
+&:hover{
+font-size: 1.5em;
+transition: 2s;
+}
+}
 }
 
 }
-// nav{
-// margin: 50px 0 0 0 ;
+.navigation{
+margin: 50px 0 0 0 ;
 
-// ul{
-// display: flex;
-// justify-content: space-evenly;
-// list-style-type: none;
-// position: relative;
-// @media @phone{
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-  
-// }
-// }
-// li {
-// display: inline-block;
-// height: 5.35em;
-// width: 5.35em;
-// }
+@media @phone{
+display: flex;
+justify-content: center;
+position: relative;
+margin:10px 0 0 0;
+}
 
-// a{
-// display: inline-block;
-// font-size: 1.35em;
-// height: 2.5em;
-// line-height: 2.53em;
-// border: 1px solid black;
-// border-radius: 50px;
-// color: @spring;
-// background-color: @white;
-// text-decoration: none;
-// text-align: center;
-// width: max-content;
+ul{
+display: flex;
+justify-content: space-evenly;
+list-style-type: none;
 
-// }
+width: 100%;
 
-// }
+@media @phone{
+display: flex;
+flex-direction: column;
+
+}
+}
+li {
+display: block;
+flex-wrap: wrap;
+height: 5.35em;
+width: 5.35em;
+@media @phone {
+height: 100%;
+width: 100%;
+margin-bottom: 20px;
+
+}
+}
+
+a{
+display: inline-block;
+font-size: 1.35em;
+height: 2.5em;
+line-height: 2.53em;
+border: 1px solid black;
+border-radius: 50px;
+color: @pale-green;
+background-color: @white;
+text-decoration: none;
+text-align: center;
+width: max-content;
+
+@media @phone{
+
+width: 100%;
+
+}
+}
+
+}
