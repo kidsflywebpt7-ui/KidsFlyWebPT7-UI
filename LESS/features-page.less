@@ -1,23 +1,28 @@
+//Container Styling
+.container{
+  background-color: @dg;
+}
+
 // Header Styling
 .header{
 width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-background-color: beige;
+background-color: @ng;
 padding-top: 40px;
 margin-bottom: 40px;
 align-content: center;
 text-align: center;
 h1{
 font-size:2.5em;
-color: black;
+color: @yg;
 }
 @media @phone{
   display: inline-block;
-  background-color: aliceblue;
+  background-color: @ng;
    width: 100%;
-   padding-top: 10px0;   
+   padding-top: 10px;   
    margin-bottom: 0;
   h1{
       margin-bottom: 10px;
@@ -35,7 +40,7 @@ font-size:0.75em;
   }
 .menu-btn{
 display: block;
-background-color: #4CAF50;
+background-color: @pale-green;
 color: white;
 padding: 16px;
 font-size: 0.75em;
@@ -43,7 +48,7 @@ border: none;
 cursor: pointer;
 
 &:hover, &:focus{
-background-color: #3e8e41;
+background-color: @dg;
 }
 @media @phone{
 display:none;
@@ -54,7 +59,7 @@ display:none;
 .menu-content{
 display: none;
 position: absolute;
-background-color: @white;
+background-color: @pale-green;
 min-width: 230px;
 overflow: auto;
 z-index: 1;
@@ -66,18 +71,21 @@ border: 1px solid lightgray;
   padding: 0;
   position: relative;
   z-index: none;
-  
+  background-color: @yg;
+  &:hover{
+    background-color: @pale-green;
+  }
 
   }
 a{
-color: black;
+color: @dg;
 padding: 12px 16px;
 border-bottom: 1px dashed gray;
 text-decoration: none;
 display: block; 
 
 &:hover{
-background-color: aqua;
+background-color: @yg;
 }
 }
 a:last-child{
@@ -100,6 +108,10 @@ margin-bottom: 100px;
 h2{
 font-size: 2.75rem;
 text-align: center;
+color: @home-p-color;
+@media @phone{
+  color: @ng;
+}
 }
 img{
 margin-top: 10px;
@@ -107,6 +119,10 @@ width: 100%;
 }
 p{
 font-size:0.5em;
+color: @yg;
+@media @phone{
+  color: @ng;
+}
 }
 @media @phone{
 display:inline;
@@ -123,16 +139,17 @@ border-radius: 20px;
 position: relative;
 height: 70px;
 overflow: hidden;
-box-shadow: 2px 2px 2px lightcoral;
+box-shadow: 2px 2px 2px white;
 
 @media @phone{
  margin:0px;
- margin-bottom:10px;
+ margin-bottom:25px;
  box-shadow: none;
  border: 3px dashed lightslategray;
  border-radius: 10px;
  box-shadow: 1px 2px 1px 1px @spring;
  height: 100%;
+ background-color: @home-p-color;
  }
 
 .expandBtn{
@@ -140,7 +157,7 @@ position: absolute;
 bottom: -24px;
 left: 50%;
 font-size: 12px;
-color: gray;
+color: @yg;
 cursor: pointer;
 transform: translate(-50%);
 
@@ -154,18 +171,31 @@ top: 10px;
 right: 10px;
 }
 }
+
 .card-open{
 height: 100%;
+background-color: @ng;
+
+.expandBtn{
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  font-size: 12px;
+  color: @home-p-color;
+  cursor: pointer;
+  transform: translate(-50%);
+}
 }
 
 // Footer Style
-footer{
-display: flex;
-justify-content: center;
-font-size: 2rem;
-
-@media @phone {
+.footer{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color:@yg;
+  background-color: @ng;
   
-  background-color: aliceblue;
-}
-}
+  @media @phone {
+    background-color: @ng;
+  }
+  }

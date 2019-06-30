@@ -4,6 +4,14 @@ function myMenu(){
 document.getElementById("myMenu").classList.toggle("show");
 }
 
+window.onclick = function(e) {
+    if (!e.target.matches('.menu-btn')){
+        var myDropdown = document.getElementById('myMenu');
+        if (myDropdown.classList.contains('show')){
+            myDropdown.classList.remove('show');
+        }
+    }
+}
 
 // Card expansion functionality
 
