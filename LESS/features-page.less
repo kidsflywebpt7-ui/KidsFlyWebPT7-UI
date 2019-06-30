@@ -22,7 +22,7 @@ color: @yg;
   display: inline-block;
   background-color: @ng;
    width: 100%;
-   padding-top: 10px0;   
+   padding-top: 10px;   
    margin-bottom: 0;
   h1{
       margin-bottom: 10px;
@@ -143,7 +143,7 @@ box-shadow: 2px 2px 2px white;
 
 @media @phone{
  margin:0px;
- margin-bottom:10px;
+ margin-bottom:25px;
  box-shadow: none;
  border: 3px dashed lightslategray;
  border-radius: 10px;
@@ -188,14 +188,14 @@ background-color: @ng;
 }
 
 // Footer Style
-footer{
-display: flex;
-justify-content: center;
-font-size: 2rem;
-margin-top: 7%;
-color:@yg;
-
-@media @phone {
+.footer{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color:@yg;
   background-color: @ng;
-}
-}
+  
+  @media @phone {
+    background-color: @ng;
+  }
+  }
