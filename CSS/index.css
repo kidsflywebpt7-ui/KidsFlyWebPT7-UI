@@ -594,6 +594,132 @@ header p {
     background-color: #0d253d;
   }
 }
+.acct {
+  background-color: #2d2d3d;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+}
+a {
+  color: #aaccaa;
+  text-decoration: none;
+  border-radius: 4px;
+}
+@media (max-width: 500px) {
+  a {
+    padding: 20px 0 20px 0;
+  }
+  a:hover {
+    font-size: 5.5rem;
+    color: #2d2d3d;
+    background-color: #eeeeaa;
+    transition: 1s;
+  }
+}
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 580px;
+  font-size: 5rem;
+  margin: 50px;
+  color: #aaccaa;
+  text-decoration-line: underline;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+    margin-right: 30px;
+    padding: 20px 0 20px 0;
+    width: 430px;
+  }
+}
+p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 520px;
+  padding-left: 100px;
+  color: #eeeeaa;
+}
+@media (max-width: 500px) {
+  p {
+    padding-left: 10px;
+    width: 490px;
+    font-size: 3.2rem;
+  }
+}
+.footer footer {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  width: 500px;
+  color: #eeeeaa;
+  background-color: #0d253d;
+}
+@media (max-width: 500px) {
+  .footer footer {
+    background-color: #0d253d;
+  }
+}
+.mytext {
+  margin-right: 50px;
+  margin-left: 180px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 20px;
+}
+@media (max-width: 500px) {
+  .mytext {
+    display: flex;
+    justify-content: center;
+    width: 156px;
+    height: 31px;
+    margin-left: 180px;
+  }
+}
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  background-color: #eeeeaa;
+  border: none;
+  width: 64px;
+  height: 33px;
+  margin-left: 300px;
+  color: #0d253d;
+}
+@media (max-width: 500px) {
+  input[type=button],
+  input[type=submit],
+  input[type=reset] {
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    width: 114px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 500px) {
+  h1.create {
+    font-size: 3.2rem;
+    margin-top: 10px;
+  }
+}
 .nav-menu nav {
   display: flex;
   justify-content: space-evenly;
