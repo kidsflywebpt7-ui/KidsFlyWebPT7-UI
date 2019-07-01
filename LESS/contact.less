@@ -1,50 +1,128 @@
+// Contact Styling
 
-.touch {
-    /* border: 6px solid black; */
-    font-size: 1rem;
-    border-bottom: 2px solid #0d253d;
-    width: 250px;
+.nav-menu {
+nav{
+display: flex;
+justify-content: space-evenly;
+font-size: 2rem;
+background-color: @dg;
+width: 100%;
+@media @phone{
+display:flex;
+flex-direction: column;
+text-align: center;
 }
-
-.email {
-    //  border: 6px solid orange; 
 }
+a{
+font-size: 3rem;
+text-decoration: none; 
+padding: 20px;
+border: 2px solid white;
+border-radius: 100px;
+margin-bottom: 10px;
+color: @yg;
+background: @ng;
+@media @phone{
+color: @dg;
+background-color: @pale-green;
+&:hover{
+background-color: @beige-green;
+color: @home-p-color;
+}
+}
+}
+}
+.touch{
+border: 6px solid black; 
+background: @dg;
+font-size: 1.5rem;
+font-family: 'Open Sans', sans-serif;
+width: 100%;
+text-decoration: underline @yg;
+text-align: center;
+padding-bottom: 20px;
+h1{
+color: @yg;
+text-align: center;
+font-size: 7rem;
+padding: 20px;
 @media @phone {
-    .email{
-        margin-left: 30px;
-        color:	#0d253d;
-    }
+font-size: 3rem;
+
 }
-/* .service{
-    border: 6px solid black;
 }
-@media screen and (max-width: 500px) {
-    .service{
-        margin-left: 60px;
-    }
+.info{
+font-size: 3rem;
+font-family: 'Open Sans', sans-serif;
+color: #9b81e0;
+@media @phone{     
+color:	@yg;
 }
-.sales{
-    border: 6px solid black;
 }
-@media screen and (max-width: 500px) {
-    .sales{
-        margin-left: 60px;
-    }
-}
-.partner{
-    border: 6px solid black;
-}
-@media screen and (max-width: 500px) {
-    .partner{
-        margin-left: 60px;
-    }
-} */
 .contact-p {
-    /* border: 6px solid black; */
     padding: 30px;
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    color: @yg;
+    
+@media @phone {
+        font-size: 2rem;
+        color:	@pale-green; 
+}
+}
 }
 .email-h1 {
     border: 6px solid black;
-    margin-left: 10px;
-    font-size: 1rem;
+    text-decoration: underline;
+    font-size: 6rem;
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: @dg;
+    color: @yg;
+@media @phone {
+        
+        text-align: center;
+    }
+}
+
+form {
+    
+    border: 6px solid black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    padding: 10px;
+    color: rgb(109, 103, 103);
+    background: @dg;
+    text-align: center;
+    p{
+        color: @yg;
+        
+        
+    }
+    input{
+        text-align: center;
+        padding: 0 10px 0 10px;
+        }
+    @media @phone {
+        
+        margin-left: 0px;
+        height: 100%;
+   
+        input{
+            text-align: center;
+            padding: 10px;
+
+        }
+    }
+}
+
+
+.ftr {
+    text-align: center;
+    border: 6px solid black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: @yg;
+    background:@dg;
 }

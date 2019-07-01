@@ -594,3 +594,129 @@ header p {
     background-color: #0d253d;
   }
 }
+.nav-menu nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  background-color: #2d2d3d;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav-menu nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.nav-menu a {
+  font-size: 3rem;
+  text-decoration: none;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  color: #eeeeaa;
+  background: #0d253d;
+}
+@media (max-width: 500px) {
+  .nav-menu a {
+    color: #2d2d3d;
+    background-color: #aaccaa;
+  }
+  .nav-menu a:hover {
+    background-color: #becca3;
+    color: #FFFFFF;
+  }
+}
+.touch {
+  border: 6px solid black;
+  background: #2d2d3d;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  text-decoration: underline #eeeeaa;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.touch h1 {
+  color: #eeeeaa;
+  text-align: center;
+  font-size: 7rem;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .touch h1 {
+    font-size: 3rem;
+  }
+}
+.touch .info {
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #9b81e0;
+}
+@media (max-width: 500px) {
+  .touch .info {
+    color: #eeeeaa;
+  }
+}
+.touch .contact-p {
+  padding: 30px;
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #eeeeaa;
+}
+@media (max-width: 500px) {
+  .touch .contact-p {
+    font-size: 2rem;
+    color: #aaccaa;
+  }
+}
+.email-h1 {
+  border: 6px solid black;
+  text-decoration: underline;
+  font-size: 6rem;
+  padding: 40px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #2d2d3d;
+  color: #eeeeaa;
+}
+@media (max-width: 500px) {
+  .email-h1 {
+    text-align: center;
+  }
+}
+form {
+  border: 6px solid black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  padding: 10px;
+  color: #6d6767;
+  background: #2d2d3d;
+  text-align: center;
+}
+form p {
+  color: #eeeeaa;
+}
+form input {
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+@media (max-width: 500px) {
+  form {
+    margin-left: 0px;
+    height: 100%;
+  }
+  form input {
+    text-align: center;
+    padding: 10px;
+  }
+}
+.ftr {
+  text-align: center;
+  border: 6px solid black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: #eeeeaa;
+  background: #2d2d3d;
+}
