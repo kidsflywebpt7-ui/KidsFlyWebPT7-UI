@@ -3,57 +3,72 @@
     <head>
         <title>KidsFly Account</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="kidsfly.css">
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+        <link href="CSS/index.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/87a88053c3.js"></script>
     </head>
     <body>
-        <div>
-            <nav>
-                <!-- <a id="logo" href="#">KidsFly</a> -->
-                    <a href="#">Home</a>
-                    <a href="#">Features</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Account</a>
-                        </nav>
-                    </div>
-        <h1>Login Now</h1>
-        <form>
+        <div class="acct">
             <div>
-                Username:
-                    <input type="text" placeholder="username" required>
+                <nav>
+                    <a href="home-page.html"><span class="fas fa-home"></span> Home</a> 
+                    <a href="features.html"><span class="fas fa-book-open"></span> Features</a> 
+                    <a href="about.html"><span class="fas fa-building"></span> About </a> 
+                    <a href="contact.html"><span class="far fa-address-book"></span> Contact </a>
+                    <a href="account.html"><span class="fas fa-user"></span> Account</a>
+                </nav>
+            </div>
+
+        <div>      
+        <form class="login">
+            <h1>Login Now</h1>
+            <div>
+                <p>Username:</p>
+                    <!-- <input size="55" type="text" required> -->
+                    <input type="text" id="text" name="text_name" class="mytext" />
             </div>
             <div>
-                Password:
-                    <input type="text" placeholder="password" required>
+                <p>Password:</p>
+                <input type="text" id="text" name="text_name" class="mytext" />
             </div>
-                <input type="submit">
-            <div>
-                <h1>Create an account?</h1>
-                Fullname:
-                <input type="text" placeholder="fullname" required>
-            </div>
-            <div>
-                E-mail Address:
-                <input type="text" placeholder="email" required>
-            </div>
-            <div>
-                Password:
-                <input type="text" placeholder="password" required>
-            </div>
-            <div>
-                Repeat Password:
-                <input type="text" placeholder="password" required>
-            </div>
-            <div>
-                Phone Number:
-                <input type="text" required>
-            </div>
-            <input type="submit" >
+                <input type="submit" value="Submit"> 
         </form>
-            
-        <div>
-            <footer>
-                <p>© 2019 KidsFly_Lambda</p>
-            </footer>
-        </div>
+                      
+                    
+        <form class="newuser">
+            <h1 class="create">Create an account?</h1>
+            <div>
+                <p>Fullname:</p>
+                <input type="text" id="text" name="text_name" class="mytext" />
+            </div>
+            <div>
+                <p>E-mail Address:</p>
+                <input type="text" id="text" name="text_name" class="mytext" />
+            </div>
+            <div>
+                <p>Password:</p>
+                <input type="text" id="text" name="text_name" class="mytext" />
+            </div>
+            <div>
+                <p>Repeat Password:</p>
+                <input type="text" id="text" name="text_name" class="mytext" />
+            </div>
+            <div>
+                <p>Phone Number:</p>
+                <input type="text" id="text" name="text_name" class="mytext" />
+            </div>
+            <input type="submit" value="Submit">
+</form>
+</div> 
+                
+        
+        <section class="footer">
+
+                <footer>
+                    <p>© 2019 KidsFly_Lambda</p>
+                </footer>
+                
+        </section>
+    </div>
     </body>
+    </html>
